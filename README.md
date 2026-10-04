@@ -51,12 +51,10 @@ git clone https://github.com/amirhAp56gm/tehrancs.git
 
 ## 🌐 انتشار آنلاین
 
-این پروژه قابلیت انتشار به‌صورت یک سایت استاتیک با **GitHub Pages** را دارد.
-
-پس از فعال‌سازی GitHub Pages، سایت از طریق آدرس زیر در دسترس خواهد بود:
+این پروژه از طریق آدرس زیر در دسترس خواهد بود:
 
 ```text
-https://amirhAp56gm.github.io/tehrancs/
+tehrancs.vercel.app
 ```
 
 ## 📌 وضعیت پروژه
