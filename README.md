@@ -1,24 +1,78 @@
-<<<<<<< HEAD
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# TehranCS
 
-# Run and deploy your AI Studio app
+TehranCS یک پلتفرم ایرانی برای مشاهده، بررسی و معامله آیتم‌ها و اسکین‌های بازی‌های **Counter-Strike 2** و **Dota 2** است.
 
-This contains everything you need to run your app locally.
+هدف پروژه ایجاد یک رابط کاربری ساده، سریع و قابل اعتماد برای کاربران ایرانی علاقه‌مند به بازار اسکین و آیتم‌های بازی‌های Valve است.
 
-View your app in AI Studio: https://ai.studio/apps/6f59a3e2-fc39-49ba-bc25-1d1576d5b191
+## ✨ امکانات
 
-## Run Locally
+* 🎮 نمایش اسکین‌ها و آیتم‌های CS2 و Dota 2
+* 🔎 جستجو و فیلتر آیتم‌ها
+* 💰 نمایش قیمت و اطلاعات آیتم‌ها
+* 🛒 رابط کاربری برای خرید و فروش
+* 👤 سیستم حساب کاربری
+* 📦 مدیریت سفارش‌ها و موجودی
+* 🔐 طراحی با تمرکز بر امنیت و تجربه کاربری
+* 📱 رابط کاربری واکنش‌گرا برای موبایل و دسکتاپ
 
-**Prerequisites:**  Node.js
+## 🛠️ تکنولوژی‌ها
 
+این پروژه در حال توسعه با تکنولوژی‌های وب مدرن است.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
-=======
-# tehrancs
->>>>>>> b38ab536f17141950521e1d9813f8925b9cfc2c8
+* HTML5
+* CSS3
+* JavaScript
+* Git
+* GitHub Pages
+
+## 📁 ساختار پروژه
+
+```text
+tehrancs/
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── images/
+│   └── ...
+└── README.md
+```
+
+## 🚀 اجرای پروژه
+
+برای اجرای نسخه فعلی، Repository را Clone کنید:
+
+```bash
+git clone https://github.com/amirhAp56gm/tehrancs.git
+```
+
+سپس فایل `index.html` را در مرورگر باز کنید.
+
+## 🌐 انتشار آنلاین
+
+این پروژه قابلیت انتشار به‌صورت یک سایت استاتیک با **GitHub Pages** را دارد.
+
+پس از فعال‌سازی GitHub Pages، سایت از طریق آدرس زیر در دسترس خواهد بود:
+
+```text
+https://amirhAp56gm.github.io/tehrancs/
+```
+
+## 📌 وضعیت پروژه
+
+> 🚧 پروژه در حال توسعه است.
+
+برخی قابلیت‌های پروژه ممکن است هنوز کامل نشده باشند و در نسخه‌های آینده اضافه یا تغییر کنند.
+
+## ⚠️ سلب مسئولیت
+
+TehranCS یک پروژه مستقل و غیررسمی است و وابستگی یا ارتباط رسمی با **Valve Corporation**، **Counter-Strike 2** یا **Dota 2** ندارد.
+
+نام‌ها، لوگوها و علائم تجاری متعلق به صاحبان respective آنها هستند.
+
+## 📄 License
+
+این پروژه در حال حاضر تحت یک مجوز عمومی مشخصی منتشر نشده است.
+
+تمام حقوق مربوط به کد و طراحی این پروژه محفوظ است، مگر اینکه صراحتاً خلاف آن اعلام شود.
