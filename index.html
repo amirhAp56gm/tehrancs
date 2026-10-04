@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تهران cs | خرید و فروش اسکین CS2</title>
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/jd0sH0kD/logo.png" />
+    <meta name="description" content="بزرگترین بازار معامله و خرید و فروش اسکین‌های CS2 با تسویه آنی و کمترین کارمزد" />
+    <meta property="og:title" content="تهران cs | خرید و فروش اسکین CS2" />
+    <meta property="og:description" content="بزرگترین بازار معامله و خرید و فروش اسکین‌های CS2 با تسویه آنی و کمترین کارمزد" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+      (function() {
+        // 1. Filter out Vite WebSocket HMR logs from console
+        const origError = console.error;
+        const origWarn = console.warn;
+        console.error = function(...args) {
+          const str = args.map(a => typeof a === 'object' ? JSON.stringify(a) : String(a)).join(' ');
+          if (str.includes('WebSocket') || str.includes('[vite]') || str.includes('closed without opened')) {
+            return;
+          }
+          origError.apply(console, args);
+        };
+        console.warn = function(...args) {
+          const str = args.map(a => typeof a === 'object' ? JSON.stringify(a) : String(a)).join(' ');
+          if (str.includes('WebSocket') || str.includes('[vite]')) {
+            return;
+          }
+          origWarn.apply(console, args);
+        };
+
+        // 2. Intercept unhandled promise rejections
+        window.addEventListener('unhandledrejection', function(event) {
+          const reasonStr = String(event.reason || '') + ' ' + String(event.reason?.message || '') + ' ' + String(event.reason?.stack || '');
+          if (reasonStr.includes('WebSocket') || reasonStr.includes('vite') || reasonStr.includes('closed without opened')) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+          }
+        }, true);
+
+        // 3. Intercept window errors
+        window.addEventListener('error', function(event) {
+          const msg = String(event.message || '') + ' ' + String(event.filename || '');
+          if (msg.includes('WebSocket') || msg.includes('vite') || msg.includes('closed without opened')) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+          }
+        }, true);
+      })();
+    </script>
+  </head>
+  <body class="bg-[#1d1d1f] text-[#F2F5F3] font-['Vazirmatn',sans-serif] selection:bg-[#20df7c] selection:text-[#0A0D0B] antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

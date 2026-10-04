@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #1d1d1f;
+    --panel-bg: #17241C;
+    --card-bg: #121814;
+    --input-bg: #0E120F;
+    --deep-bg: #0A0D0B;
+    --accent-primary: #20df7c;
+    --accent-secondary: #b7f1d1;
+    --border-subtle: rgba(183, 241, 209, 0.08);
+  }
+
+  body {
+    background-color: #1d1d1f;
+    color: #F2F5F3;
+    font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom compact scrollbar for marketplace filters and horizontal lists */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0E120F;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e3325;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #20df7c;
+}
+
+/* Hide scrollbar for clean category navigation */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Enchanted Floating Weapon Showcase Animations */
+@keyframes enchantedLevitate {
+  0%, 100% {
+    transform: translate3d(0, 4px, 0) rotateZ(0.8deg) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -18px, 20px) rotateZ(-1.6deg) scale(1.045);
+  }
+}
+
+@keyframes enchantedEchoPulse {
+  0%, 100% {
+    transform: translate3d(0, 6px, 0) scale(0.96);
+    opacity: 0.45;
+  }
+  50% {
+    transform: translate3d(0, -18px, 0) scale(1.12);
+    opacity: 0.8;
+  }
+}
+
+@keyframes enchantedShadowBreathing {
+  0%, 100% {
+    transform: rotateX(75deg) scale(1.08);
+    opacity: 0.75;
+  }
+  50% {
+    transform: rotateX(75deg) scale(0.68);
+    opacity: 0.32;
+  }
+}
+
+@keyframes enchantedRingSpin {
+  0% {
+    transform: rotateX(74deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(74deg) rotateZ(360deg);
+  }
+}
+
+@keyframes enchantedRingSpinReverse {
+  0% {
+    transform: rotateX(74deg) rotateZ(360deg);
+  }
+  100% {
+    transform: rotateX(74deg) rotateZ(0deg);
+  }
+}
+
+@keyframes enchantedParticleRise {
+  0% {
+    transform: translate3d(0, 24px, 0) scale(0.4);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: translate3d(var(--drift-x, 12px), -95px, 0) scale(1.15);
+    opacity: 0;
+  }
+}
+
+@keyframes enchantedGodRayPulse {
+  0%, 100% {
+    opacity: 0.28;
+    transform: rotate(-12deg) scale(1);
+  }
+  50% {
+    opacity: 0.52;
+    transform: rotate(-8deg) scale(1.08);
+  }
+}
+
+.animate-enchanted-levitate {
+  animation: enchantedLevitate 4.4s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+  will-change: transform;
+}
+
+.animate-enchanted-echo {
+  animation: enchantedEchoPulse 4.4s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+  will-change: transform, opacity;
+}
+
+.animate-enchanted-shadow {
+  animation: enchantedShadowBreathing 4.4s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+  will-change: transform, opacity;
+}
+
+.animate-enchanted-ring {
+  animation: enchantedRingSpin 18s linear infinite;
+  will-change: transform;
+}
+
+.animate-enchanted-ring-reverse {
+  animation: enchantedRingSpinReverse 24s linear infinite;
+  will-change: transform;
+}
+
+.animate-enchanted-ray {
+  animation: enchantedGodRayPulse 5.5s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+/* Remove focus outlines/strokes when clicking on Recharts charts */
+.recharts-wrapper,
+.recharts-wrapper:focus,
+.recharts-wrapper *:focus,
+.recharts-wrapper *:focus-visible,
+.recharts-surface,
+.recharts-surface:focus,
+.recharts-layer,
+.recharts-layer:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+

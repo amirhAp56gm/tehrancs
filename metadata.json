@@ -1,0 +1,6 @@
+{
+  "name": "تهران cs",
+  "description": "بزرگترین بازار معامله و خرید و فروش اسکین‌های CS2 با تسویه آنی و کمترین کارمزد",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
