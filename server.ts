@@ -46,7 +46,8 @@ function saveProductsToFile(products: any[]) {
 
 async function startServer() {
   const app = express();
-  const PORT = 3000;
+  //const PORT = 3000;
+  const PORT = Number(process.env.PORT || 3000);
 
   app.use(express.json({ limit: '10mb' }));
 
@@ -57,10 +58,14 @@ async function startServer() {
 
   // Steam OpenID 2.0 Auth Endpoint
   app.get('/api/auth/steam', (req, res) => {
-    const protocol = req.headers['x-forwarded-proto'] || req.protocol || 'http';
+   /* const protocol = req.headers['x-forwarded-proto'] || req.protocol || 'http';
     const host = req.headers['x-forwarded-host'] || req.get('host');
-    const baseUrl = `${protocol}://${host}`;
-    const returnTo = `${baseUrl}/api/auth/steam/callback`;
+    const baseUrl = `${protocol}://${host}`; */
+    const protocol = req.headers['x-forwarded-proto'] || req.protocol || 'http';
+   const host = req.headers['x-forwarded-host'] || req.get('host');
+   const baseUrl =
+     process.env.PUBLIC_URL || `${protocol}://${host}`;
+    const returnTo = `${baseUrl}/api/auth/steam/callback`; 
 
     const params = new URLSearchParams({
       'openid.ns': 'http://specs.openid.net/auth/2.0',
